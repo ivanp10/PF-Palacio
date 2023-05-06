@@ -105,7 +105,14 @@ body{
     font-weight: 500;
     margin-bottom: 35px;
     margin-top: 95px;
+    animation: blinker 3s linear infinite;
 }
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
 
 .header-txt span {
     font-weight: 800;

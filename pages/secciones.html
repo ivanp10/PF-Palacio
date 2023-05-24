@@ -27,37 +27,70 @@
 
     <h3 class="titulo-sec">SECCIONES</h3>
 
+    <script>
+        function mostrarPopup(texto) {
+          var popupContainer = document.getElementById("popup-container");
+          var popupText = document.getElementById("popup-text");
+          popupText.innerText = texto;
+          popupContainer.style.display = "block";
+        }
+        
+        function ocultarPopup() {
+          var popupContainer = document.getElementById("popup-container");
+          popupContainer.style.display = "none";
+        }
+      </script>
+
     <main class="services container">
         <a href="#" class="info">SECTIONS</a>
-        
+    
 
         <div class="services-content">
-            <div class="services-card">
+            <div class="services-card" onclick="mostrarPopup('SE ACABARON LOS 32 Y 16 BITS CON LA NUEVA ARQUITECTURA INTEL x86S. \n Intel quiere dar un paso al futuro y olvidarse de las tecnologías antiguas. Por eso, con su nueva arquitectura de Intel x86S dejaría a un lado el soporte para los 32 y 16 bits y se centraría exclusivamente en los 64 bits. \n 23 de mayo, 2023 • 20:30')">
                 <img src="../img/1.svg" alt="numero 1">
                 <div class="card-txt">
                     <h3>Hardware</h3>
                     <p>Descubrí las noticias recientes acerca de Hardware!</p>
-                    <a href="#">COMING SOON</a>
+                    <a href="#">CLICKEA PARA VER LA NOTICIA DESTACADA!</a>
                 </div>
             </div>
-            <div class="services-card">
+            <div id="popup-container">
+                <h2>NOTICIA DESTACADA</h2>
+                <p id="popup-text">Este es el contenido del popup. Se reemplazará con el texto correspondiente a la tarjeta seleccionada.</p>
+                <button onclick="ocultarPopup()">Cerrar</button>
+              </div>
+
+            <div class="services-card" onclick="mostrarPopup('ZUCKERBERG VA POR MUSK: Instagram lanzará su propio Twitter muy pronto. \n La plataforma de Meta funcionará de forma independiente, se basará en texto con un límite de 500 características y podría debutar en junio. \n 23 mayo, 2023 16:30')">
                 <img src="../img/2.svg" alt="numero 2">
                 <div class="card-txt">
                     <h3>Software</h3>
                     <p>Descubrí las noticias recientes acerca de Software!</p>
-                    <a href="#">COMING SOON</a>
+                    <a href="#">CLICKEA PARA VER LA NOTICIA DESTACADA!</a>
                 </div>
             </div>
-            <div class="services-card">
+            <div id="popup-container">
+                <h2>NOTICIA DESTACADA</h2>
+                <p id="popup-text">Este es el contenido del popup. Se reemplazará con el texto correspondiente a la tarjeta seleccionada.</p>
+                <button onclick="ocultarPopup()">Cerrar</button>
+              </div>
+            
+
+            <div class="services-card" onclick="mostrarPopup('GOOGLE ya detecta imágenes falsas hechas con inteligencia artificial. \n La compañía de Mountain View ha introducido nuevas mejoras a su sistema de búsqueda de imágenes para añadir contexto y detectar posibles engaños. \n 23 mayo, 2023 18:30 ')">
                 <img src="../img/3.svg" alt="numero 3">
                 <div class="card-txt">
                     <h3>Inteligencia Artificial</h3>
                     <p>Descubrí las noticias recientes acerca de Inteligencia Artificial!</p>
-                    <a href="#">COMING SOON</a>
+                    <a href="#">CLICKEA PARA VER LA NOTICIA DESTACADA!</a>
                 </div>
             </div>
-            
+            <div id="popup-container">
+                <h2>NOTICIA DESTACADA</h2>
+                <p id="popup-text">Este es el contenido del popup. Se reemplazará con el texto correspondiente a la tarjeta seleccionada.</p>
+                <button onclick="ocultarPopup()">Cerrar</button>
+              </div>
         </div>
+
+          
     </main>
 
     <footer class="footer">

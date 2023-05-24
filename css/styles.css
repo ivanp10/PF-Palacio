@@ -199,7 +199,21 @@ body {
 .card-txt a {
   font-size: 16px;
   font-weight: 600;
-  color: #fefffb;
+  color: #ba00fd;
+}
+
+#popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background-color: #40223a;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .services-img {
@@ -284,7 +298,7 @@ body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 30%;
-  height: 300px;
+  height: 500px;
 }
 .price h3 {
   font-size: 30px;
@@ -407,6 +421,20 @@ body {
   justify-content: center;
   display: flex;
   margin-top: 100px;
+}
+
+.nosotros-txt{
+  color: #fefffb;
+  font-size: 18px;
+  text-align: justify;
+  width: 50%;
+  margin: 0 auto;
+ 
+}
+
+.nosotros-txt p{
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
 @media (max-width: 991px) {
